@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{85c5a948-2832-4c24-8ff5-0486ba9bce47}">
+		<property name="name">
+			<value>gloomvine</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0be25427-158e-4ecf-ab66-92a1f1c9acc8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{42d45006-e198-4b82-9c35-5187cd3cd729}">
+		<property name="name">
+			<value>bloomerang</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0be25427-158e-4ecf-ab66-92a1f1c9acc8}</destination>
+		</relationship>
+	</object>
+</objects>
