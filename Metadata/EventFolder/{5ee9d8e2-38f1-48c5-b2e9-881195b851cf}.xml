@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{5ee9d8e2-38f1-48c5-b2e9-881195b851cf}">
+		<property name="name">
+			<value>pea_shadow_pf_0</value>
+		</property>
+		<relationship name="folder">
+			<destination>{dfa29e28-2e08-4793-897a-7f263ba32fa0}</destination>
+		</relationship>
+	</object>
+</objects>

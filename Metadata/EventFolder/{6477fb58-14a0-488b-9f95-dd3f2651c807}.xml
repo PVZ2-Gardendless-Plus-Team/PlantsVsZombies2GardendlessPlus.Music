@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{6477fb58-14a0-488b-9f95-dd3f2651c807}">
+		<property name="name">
+			<value>cabbagepult</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0be25427-158e-4ecf-ab66-92a1f1c9acc8}</destination>
+		</relationship>
+	</object>
+</objects>
