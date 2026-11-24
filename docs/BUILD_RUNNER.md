@@ -54,8 +54,13 @@ cannot reach another repository, so they share a personal token:
 
 1. GitHub > **Settings > Developer settings > Personal access tokens >
    Fine-grained tokens > Generate new token**.
-2. **Repository access: Only select repositories**, and pick both
-   `MacksPVZ2-Again` and `MacksPVZ2-Again.Music`.
+2. **Resource owner: `PVZ2-Gardendless-Plus-Team`** (the organisation, not
+   your own account: a token owned by your account cannot reach the org's
+   repositories). **Repository access: Only
+   select repositories**, and pick both `PlantsVsZombies2GardendlessPlus` and
+   `PlantsVsZombies2GardendlessPlus.Music`. If the org requires approval for
+   fine-grained tokens, approve it under the org's **Settings > Personal
+   access tokens > Pending requests**.
 3. **Permissions > Repository permissions > Actions: Read and write.** Nothing
    else is needed. Pick an expiry you will remember to renew.
 4. Add it as a repository **secret** named `BANKS_TOKEN` in **both**
@@ -87,7 +92,8 @@ date). Pull the game repo to get them.
   points at the wrong path.
 - **"BANKS_TOKEN secret is not set", or a 401/403/404 from either workflow:**
   the token is missing from one of the repos, lacks Actions read and write on
-  both, or has expired.
+  both, has expired, or is owned by your account instead of the org (the likely
+  reason builds stopped after the repos moved to the org on 2026-10-23).
 - **Pull fails on `audio/banks`:** an older setup copied banks in by hand.
   Delete the `.bank` files there and pull again.
 - **Clips missing from the build:** check that `git lfs version` works for the
