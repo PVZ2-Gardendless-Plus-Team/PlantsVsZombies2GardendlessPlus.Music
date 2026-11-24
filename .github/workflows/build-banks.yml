@@ -85,7 +85,7 @@ jobs:
             inputs = @{ run_id = "$env:GITHUB_RUN_ID"; music_sha = "$env:GITHUB_SHA" }
           } | ConvertTo-Json
           Invoke-RestMethod -Method Post `
-            -Uri 'https://api.github.com/repos/Mackery6969/MacksPVZ2-Again/actions/workflows/update-banks.yml/dispatches' `
+            -Uri 'https://api.github.com/repos/PVZ2-Gardendless-Plus-Team/PlantsVsZombies2GardendlessPlus/actions/workflows/update-banks.yml/dispatches' `
             -Headers @{ Authorization = "Bearer $env:TOKEN"; Accept = 'application/vnd.github+json'; 'X-GitHub-Api-Version' = '2022-11-28' } `
             -Body $body -ContentType 'application/json'
           "Started the game repo's Update FMOD banks workflow for $env:GITHUB_SHA"
